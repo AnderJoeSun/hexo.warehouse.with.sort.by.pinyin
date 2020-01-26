@@ -1,35 +1,9 @@
-# Warehouse
+## Warehouse modified by zhengnian.me
+1. 基于Warehouse的v2.2.0版本进行修改：添加拼音排序，使Hexo博客的标签云等的中英文排序可以按英文字母顺序排序。
 
-[![Build Status](https://travis-ci.org/tommy351/warehouse.svg?branch=master)](https://travis-ci.org/tommy351/warehouse)  [![NPM version](https://badge.fury.io/js/warehouse.svg)](http://badge.fury.io/js/warehouse) [![Coverage Status](https://coveralls.io/repos/tommy351/warehouse/badge.svg?branch=master)](https://coveralls.io/r/tommy351/warehouse?branch=master)
+2. 时过境迁，Warehouse现在已步入3.X.X版本了，可以对比本工程源码与Warehouse的v2.2.0版本来抽取补丁，打到v3.X.X上即可。
 
-## Installation
+2. 可以到[我的博客](https://zhengnian.me)查看完整的使用说明和博客示例。
 
-``` bash
-$ npm install warehouse
-```
-
-## Usage
-
-``` js
-var Database = require('warehouse');
-var db = new Database();
-
-var Post = db.model('posts', {
-  title: String,
-  created: {type: Date, default: Date.now}
-});
-
-Post.insert({
-  title: 'Hello world'
-}).then(function(post){
-  console.log(post);
-});
-```
-
-- [API](http://tommy351.github.io/warehouse/)
-
-## Test
-
-``` bash
-$ npm test
-```
+## Original Warehouse
+[Github](https://github.com/hexojs/warehouse)
